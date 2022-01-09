@@ -4,3 +4,5 @@
 2. mvc모델로 만들기
 3. mariaDB , mysql, myBatis 사용
 4. 쓰읍
+
+@되는지 확인가능? 
