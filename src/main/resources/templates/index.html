@@ -1,0 +1,41 @@
+<html xmlns:th ="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>인덱스 </title>
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<h1> 내 프로젝트가 본격적으로 시작할것이다</h1>
+<h2> 알겟냐구!</h2>
+<table>
+    <tbody>
+        <tr>
+            <th>table</th>
+            <td>
+                내맘이댜
+            </td>
+        </tr>
+        <tr>
+                <th> 타임리프</th>
+                <td th:text="'안녕하세요.' + ${ data }"></td>
+        </tr>
+        <tr>
+            <th> 데이터</th>
+            <td id="userId"></td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+
+    $.get("http://localhost:8080/user", function (data){
+        console.log(data);
+    })
+
+</script>
+</body>
+</html>
