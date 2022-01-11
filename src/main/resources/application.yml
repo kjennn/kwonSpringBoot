@@ -8,9 +8,9 @@ spring:
 
   mvc:
     static-path-pattern: "/static/**"
-server:
-  servlet:
-    context-path: /api
+#server:
+#  servlet:
+#    context-path: /api
 
 
 
