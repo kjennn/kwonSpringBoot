@@ -14,7 +14,7 @@ public class UserService {
 
     private final UserMapper userMapper;
 
-    public List<HashMap> findAll() {
+    public List<UserDto> findAll() {
         return userMapper.findAll();
     }
 }
